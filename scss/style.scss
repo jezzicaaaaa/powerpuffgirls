@@ -1,0 +1,427 @@
+@import 'partials/setup';
+
+@import 'partials/variables';
+
+
+
+.home{
+	margin: 0;
+	padding: 0;
+	background-image: url("../assets/powerpuffExplosion.jpg"); 
+	background-position: center;
+	height: 100vh;
+	background-size: cover;
+	text-align: center;
+
+	.title{
+		background: #202128;
+		height: auto;
+		padding: 20px;
+
+		p {
+			padding:0 auto;
+			margin:0 auto;
+			font-family: $dynamix;
+			text-transform: uppercase;
+			font-size: 40px;	
+			color: #F9DEC9;
+			max-width: 1180px;
+			text-align: center;
+		}
+	}
+
+	button{
+		margin: 0 auto;
+		margin-top: 12%;
+		border-radius: 15px;
+		background: $snow;
+		border: 5px solid $eerieBlack;
+		padding: 10px 65px;
+		text-transform: uppercase;
+		color: $eerieBlack;
+		font-family: 'Baloo Bhaina', cursive;
+		font-size: 45px;
+		letter-spacing: 2px;
+		transition: 0.5s ease-in-out;
+
+	}
+	button:hover{
+		background: $eerieBlack;
+		color: $snow;
+		border: 5px solid $snow;
+	}
+	button:active{
+		position:relative;
+    	top:1px;
+	}
+	button:focus{
+		outline: none;
+	}
+}
+.quiz{
+	margin: 0;
+	padding: 0;
+	background-image: url("../assets/mojojo.jpg");
+	background-position: center;
+	width: 100%;
+	background-size: cover;
+	z-index: -1;
+
+	form{
+		padding: 30px;
+		width: 65%;
+		text-align: center;
+
+		p{
+			margin: 0;
+			padding: 0;
+			font-family: $dynamix;
+			font-size: 30px;
+			text-transform: uppercase;
+			color: #0C0F0A;
+
+
+		}
+		.questionnaire{
+			padding: 17px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+
+			
+			label{
+				font-family: $sorry;
+				display: block;
+				font-size: 18px;
+				letter-spacing: 1px;
+				margin: 15px;
+				color: $snow;
+				width: 80%;
+				padding: 20px;
+				border: 3px solid transparent;
+				border-radius: 30px;	
+			
+			}
+			label:hover{
+				cursor: pointer;
+			}
+			input[type="radio"]{
+				margin-right: 10px;
+				display: none;
+			}	
+			input[type="radio"]:checked+label{ 
+				color: #FEC1C0;
+				border: 3px solid #9AADBF;
+				border-radius: 30px;
+				background-color: #46351D;
+			}
+			
+		} 
+		input[type="submit"]{
+			margin: 0 auto;
+			margin-top: 3%;
+			border-radius: 15px;
+			background: $snow;
+			border: 5px solid $eerieBlack;
+			padding: 8px 30px;
+			color: $eerieBlack;
+			font-family: 'Baloo Bhaina', cursive;
+			font-size: 35px;
+			letter-spacing: 2px;
+			transition: 0.2s ease-in-out;
+			text-transform: uppercase;
+		}
+		input[type="submit"]:hover{
+			color: $snow;
+			background-color: $eerieBlack;
+			border: 5px solid $snow;
+		}
+
+		input[type="submit"]:focus{
+			outline: none;
+		}
+		input[type="submit"]:active{
+			position: relative;
+			top:1px;
+		}
+	}
+}
+ 
+.final-result{
+	
+	.result{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-size: cover;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+		.container{
+			background: rgba(46, 64, 87, 0.9);
+			width: 50%;
+			height: auto;
+			margin: 10% auto;
+			padding: 20px;
+			border-radius: 20px;
+			border: 5px solid $snow;
+			transition: 0.3s ease-in-out;
+			display: inline-block;
+
+			.con-title{
+				font-family: $dynamix;
+				font-size: 40px;
+
+			}
+			.des{
+				font-family: $sorry;
+				font-size: 20px;
+				line-height: 2em;
+				color: white;
+				letter-spacing: 1px;
+			}
+			button{
+				color: #FEC1C0;
+				border: 3px solid #9AADBF;
+				border-radius: 10px;
+				background-color: #46351D;
+				padding: 10px 25px;
+				text-transform: uppercase;
+				font-family: 'Baloo Bhaina', cursive;
+
+
+			}
+			button:focus{
+				outline: none;
+			}
+			button:active{
+				position: relative;
+				top: 1px;
+			}
+			.tweet{
+				float: left;
+				margin-left: 5%;
+			}
+			.try-again{
+				float:right;
+				margin-right: 5%;	
+			}
+
+		}
+		.container:hover{
+			border:5px solid rgba(46, 64, 87, 1);
+			background: $snow;
+		}
+		.container:hover .des{
+			color:black;
+		}
+
+	}
+	#bubbles-result{
+		background-image: url("../assets/bubblesf.jpg");
+		.con-title{
+			color: #FDDB00;
+		}
+		.container:hover .con-title{
+			color:#59B3E8;
+		}
+
+	}
+	#blossom-result{
+		background-image: url("../assets/blossomf.jpg");
+		.con-title{
+			color: #F5A22C;
+
+		}
+		.container:hover .con-title{
+			color: #EB6B6F;
+		}
+
+	}
+	#buttercup-result{
+		background-image: url("../assets/buttercupf.jpg");
+		.con-title{
+			color: #F4CFB2
+		}
+		.container:hover .con-title{
+			color: #4EA721;
+
+		}
+	}
+}
+@media (max-width: 940px){
+	.quiz{
+		form{
+			width: 87%;
+			p{
+				font-size: 28px;
+			}
+			label{
+				font-size: 28px;
+			}
+		}
+	}
+	.final-result{
+		.result{
+			.container{
+				float:none;
+				margin: 10% auto;
+				width: 90%;
+				height: 70%;
+				padding: 5px;
+				.con-title{
+					font-size: 30px;
+				}
+				.des{
+					font-size: 20px;
+					line-height: 2.5em;
+				}
+				.tweet{
+					margin-left: 15vh;
+				}
+				.try-again{
+					margin-right: 15vh;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 767px){
+	.home{
+		.title{
+			p{
+				font-size: 35px;
+			}
+		}
+		button{
+			margin-top: 10%;
+			font-size: 35px;
+			padding: 20px 50px;
+		}
+	}
+	.quiz{
+		background-position: center;
+		background-size: auto;
+		text-align: center;
+		background: #463C57;
+		form{
+			padding: 30px;
+			margin: 0 auto;
+			width: 100%;
+
+
+			p{
+				text-align: center;
+				font-size: 30px;
+
+			}
+			.questionnaire{
+				display: block;
+
+				label{
+					font-size: 20px;
+					width: 50%;
+					display: inline-block;
+					padding: 20px 10px;
+				}
+			}
+		}	
+	}
+	.final-result{
+		.result{
+			height: 100%;
+			.container{
+
+				.con-title{
+					font-size: 25px;
+				}
+				.des{
+					font-size: 18px;
+				}
+				button{
+					padding: 8px 10px;
+				}
+				.tweet{
+					float: left;
+					margin: 2% 5%;
+				}
+				.try-again{
+					float: right;
+					margin: 2% 5%;
+				}
+			}
+		}
+	}
+}
+@media(max-width: 480px){
+	.home{
+		.title{
+			p{
+				font-size: 25px;
+			}
+		}
+		button{
+			padding: 10px 20px;
+			font-size: 25px;
+		}
+	}
+	.quiz{
+		margin: 0 auto;
+		overflow: hidden;
+		form{
+			p{
+				font-size: 22px;
+			}
+			.questionnaire{
+				width: 100%;
+				label{
+					flex-direction: column;
+					flex-wrap: wrap;
+					width: 90%;
+				}
+			}
+		}
+	}
+	.final-result{
+		.result{
+			.container{
+				border:5px solid rgba(46, 64, 87, 0.8);
+				background-color: rgba(46, 64, 87, 0.7);
+				height: auto;
+
+				.con-title{
+					font-size: 20px;
+					color: black;
+				}
+				.des{
+					font-size: 16px;
+					color: white;
+					line-height: 1.7em;
+				}
+
+			}
+			.container:hover{
+				background-color: rgba(46, 64, 87, 0.7);
+			}
+			.container:hover .con-title{
+				color: black
+			}
+			.container:hover .des{
+				color: white;
+			}
+		}
+	}
+	#bubbles-result{
+		.con-title{
+			color: black;
+		}
+		.container:hover .con-title{
+			color: #EB6B6F;
+		}
+
+	}
+
+}

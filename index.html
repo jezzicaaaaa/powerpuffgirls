@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Powerpuff!</title>	
+	<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+<link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+		
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="home">
+		<div class="bgoverlay">
+			<div class="title">
+				<p>Which Powerpuff Girl are you? </p>
+			</div>
+			<button class="takeQuiz">take quiz</button>
+		</div>
+	</section>
+	<!-- hidden section that appear after user clicks take quiz -->
+	<section class="quiz">
+		<form>
+			<p>On your free time, you'd rather..</p>
+			<div class="questionnaire">
+			  	<input type="radio" name="question1" id="question1answer1" value="bubblesTrait">
+			  	<label for="question1answer1">play with animals</label>
+			  	<br>
+				
+				<input type="radio" name="question1" id="question1answer2" value="blossomTrait">
+				<label for="question1answer2">read books</label>
+				<br>
+				
+				<input type="radio" name="question1" id="question1answer3" value="buttercupTrait">
+				<label for="question1answer3">play sport</label>
+				<br>
+				<br>
+			</div>
+
+			<p>What's your personality type?</p>
+			<div class="questionnaire">
+				<input type="radio" name="question2" id="question2answer1" value="blossomTrait">
+					<label for="question2answer1">confident</label><br>
+				<input type="radio" name="question2" id="question2answer2" value="buttercupTrait">
+					<label for="question2answer2">sarcastic</label><br>
+		  		<input type="radio" name="question2" id="question2answer3" value="bubblesTrait">
+		  			<label for="question2answer3">bubbly</label><br><br>
+
+			</div>
+			<p>If you see a cockroach, what will you do?</p>
+			<div class="questionnaire">
+			
+				<input type="radio" name="question3" id="question3answer1" value="buttercupTrait">
+					<label for="question3answer1">step on it</label><br>
+			
+		  		<input type="radio" name="question3" id="question3answer2" value="bubblesTrait">
+		  			<label for="question3answer2">try to talk to it</label><br>
+		  	
+				<input type="radio" name="question3" id="question3answer3" value="blossomTrait">
+					<label for="question3answer3">scream "EEEEEEEW!"</label><br><br>
+			</div>
+
+			<p>Among your siblings, you are always the..</p>
+			<div class="questionnaire">
+				<input type="radio" name="question4" id="question4answer1" value="blossomTrait">
+					<label for="question4answer1">peacemaker</label><br>
+			
+		  		<input type="radio" name="question4" id="question4answer2" value="bubblesTrait">
+		  			<label for="question4answer2">always underestimated</label><br>
+		  	
+				<input type="radio" name="question4" id="question4answer3" value="buttercupTrait">
+					<label for="question4answer3">protective one</label><br>
+			</div>
+
+			<p>Best describe you as...</p>
+			<div class="questionnaire">
+				<input type="radio" name="question5" id="question5answer1" value="buttercupTrait">
+					<label for="question5answer1">fearless and loyal</label><br>
+		  	
+		  		<input type="radio" name="question5" id="question5answer2" value="bubblesTrait">
+		  			<label for="question5answer2">cute and sweet</label><br>
+		  	
+				<input type="radio" name="question5" id="question5answer3" value="blossomTrait">
+					<label for="question5answer3">smart and determined</label><br><br>
+			</div>
+			<input type="submit" id="getResults" value="Submit">
+		</form>
+	</section>
+	<section class="final-result">
+		<div class="result" id="bubbles-result">
+			<div class="container">
+				<p class="con-title">
+					YOU ARE BUBBLES!!
+				</p>
+				<p class="des">
+					Like Bubbles, you are quite sweet. You aren’t too concerned with being in charge, but you still know how to kick ass when the situation calls for it. You try not to care about what other people think of you, but you greatly value and depend on the relationships you do have.
+				</p>
+				<button class="tweet">Tweet</button>
+				<button class="try-again">Try again</button>
+			</div>
+		</div>
+		<div class="result" id="blossom-result">
+			<div class="container">
+				<p class="con-title">
+					YOU ARE BLOSSOM!!
+				</p>
+				<p class="des">
+					Like Blossom, you enjoy being in control. You have a cool head in a stressful situation, and you know how to utilize your competitive side for good. People tend to look to you for advice, and your confidence shines through.
+				</p>
+				<button class="tweet">Tweet</button>
+				<button class="try-again">Try again</button>
+			</div>
+		</div>
+		
+
+		<div class="result" id="buttercup-result">
+
+			<div class="container">
+				<p class="con-title">
+					YOU ARE BUTTERCUP!!
+				</p>
+				<p class="des">
+					Like Buttercup, you are very strong, in personality and otherwise. You don’t take crap from anyone, and you enjoy giving justice to those who have done wrong. You know how to stand up for yourself and others, and you don’t let the peasants get to you.
+				</p>
+				<button class="tweet">Tweet</button>
+				<button class="try-again">Try again</button>
+			</div>
+		</div>
+	</section>
+
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
